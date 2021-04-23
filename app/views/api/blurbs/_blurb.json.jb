@@ -1,0 +1,7 @@
+{
+  id: blurb.id,
+  location: blurb.location,
+  fact: blurb.fact,
+  image_url: blurb.image_url,
+  user_id: blurb.user_id,
+}
