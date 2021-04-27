@@ -1,0 +1,4 @@
+{
+  location: @blurb.location,
+  fact: @blurb.fact
+}
