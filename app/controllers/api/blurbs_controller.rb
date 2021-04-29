@@ -13,6 +13,15 @@ class Api::BlurbsController < ApplicationController
     render "show.json.jb"
   end
 
+  def update
+    @blurb = Blurb.find_by(id: params[:id])
+    @blurb.location = params[:location] || @blurb.location
+    @blurb.fact = params[:fact] || @blurb.fact
+    @blurb.image_url = params[:image_url] || @blurb.image_url
+    @blurb.save
+    render "show.json.jb"
+  end
+
   def destroy
     blurb = Blurb.find_by(id: params[:id])
     blurb.destroy
