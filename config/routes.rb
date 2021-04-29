@@ -3,6 +3,8 @@ Rails.application.routes.draw do
     get "/blurbs" => "blurbs#random"
     post "/blurbs" => "blurbs#create"
     delete "/blurbs/:id" => "blurbs#destroy"
+    
     post "/users" => "users#create"
+    post "/sessions" => "sessions#create"
   end
 end
