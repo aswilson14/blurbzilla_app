@@ -7,7 +7,8 @@ class Api::BlurbsController < ApplicationController
   def create
     @blurb = Blurb.new(
       location: params[:location],
-      fact: params[:blurb]
+      fact: params[:blurb],
+      image_url: "https://149360821.v2.pressablecdn.com/wp-content/uploads/2020/05/Dino-No-Internet.jpg"
     )
     @blurb.save
     render "show.json.jb"
