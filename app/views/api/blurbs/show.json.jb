@@ -3,4 +3,4 @@
   fact: @blurb.fact
 }
 
-# may want to add the image_url row after completed admin authentication
+#add the image_url row after completed admin authorization
